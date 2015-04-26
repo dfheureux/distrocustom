@@ -61,13 +61,14 @@ filetype plugin indent on
         " http://stackoverflow.com/questions/10746750/set-vim-bracket-highlighting-colors
         hi MatchParen cterm=bold ctermbg=none ctermfg=blue
 
-        " Resalta la busqueda de palabras (presiona * en modo normal)
+        " Resalta las palabras que coinciden con la palabra en la que se encuentra el puntero. Para
+        " disparar presionar la tecla asterisco (*) en modo normal.
         " http://stackoverflow.com/questions/3431184/highlight-all-occurrence-of-a-selected-word
         " http://stackoverflow.com/questions/7103173/
         hi Search ctermbg=gray ctermfg=black
 
     " Atajos de Teclado
     " ----------------------------------------------------------------------------------------------
-        " Oculta/Muestra los numeros de linea con la combinacion: <Ctrl-N><Ctrl-N>
+        " Oculta/Muestra los numeros de linea con la combinacion <Ctrl-N><Ctrl-N> en modo normal.
         " http://vim.wikia.com/wiki/Display_line_numbers
         nmap <C-N><C-N> :set invnumber invrelativenumber<CR>
