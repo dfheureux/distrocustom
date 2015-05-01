@@ -72,3 +72,13 @@ filetype plugin indent on
         " Oculta/Muestra los numeros de linea con la combinacion <Ctrl-N><Ctrl-N> en modo normal.
         " http://vim.wikia.com/wiki/Display_line_numbers
         nmap <C-N><C-N> :set invnumber invrelativenumber<CR>
+        
+        " Autocompleta la palabra si previamente existe en el texto
+        " presionando <Ctrl-Space> en modo insertar.
+        " http://stackoverflow.com/questions/510503/ctrlspace-for-omni-and-keyword-completion-in-vim
+        inoremap <expr> <C-Space> pumvisible() \|\| &omnifunc == '' ?
+        \ "\<lt>C-n>" :
+        \ "\<lt>C-x>\<lt>C-o><c-r>=pumvisible() ?" .
+        \ "\"\\<lt>c-n>\\<lt>c-p>\\<lt>c-n>\" :" .
+        \ "\" \\<lt>bs>\\<lt>C-n>\"\<CR>"
+        imap <C-@> <C-Space>
