@@ -45,7 +45,15 @@ fi
 # mint-fortune
 /usr/bin/mint-fortune
 
-# deivit_bash
-if [ -f ~/.dvt_bashrc ]; then
-    . ~/.dvt_bashrc
-fi
+# ######################################################################################################################
+# DEIVIT
+# ######################################################################################################################
+
+# HISTSIZE es el número de lineas o comandos que son almacenadas en memoria en una lista mientras estamos en la sesion 
+# actual. Dejarlo sin valor o establecerlo a -1 significará que la lista es ilimitada.
+HISTSIZE=
+
+# HISTFILESIZE es el número de líneas o comandos que (a) son permitidos en el archivo de historia al inicio de la 
+# sesión, y (b) son almacenados en el archivo de historia al final de la sesión bash para ser usado en futuras sesiones.
+# Dejarlo sin valor o establecerlo a -1 significará que la lista es ilimitada.
+HISTFILESIZE=
